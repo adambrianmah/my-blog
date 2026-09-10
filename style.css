@@ -119,3 +119,7 @@ p {
   text-align: justify;
   hyphens: auto;
 }
+.attribution {
+  display: block;
+  text-align: right;
+}
