@@ -20,14 +20,14 @@
 }
 .bembo-body p {
   font-family: 'ET Bembo', Georgia, serif;
-  font-weight: 900; 
+  font-weight: 600; 
   font-size: 1.15rem;       /* matches the fairly generous type size in the scan */
   line-height: 1.4;        /* the scan has tight-but-readable leading, not airy */
   text-indent: 0;         /* first-line paragraph indent, no blank line between */
   max-width: 60ch;          /* the scan's column is fairly narrow relative to type size */
   color: #1c1c1c;           /* the scan is black ink, not pure #000 — slightly softer */
   word-spacing: -0.00em; /* negative value tightens space between words */
-  -webkit-text-stroke: 0.4px currentColor;
+  -webkit-text-stroke: 0.5px currentColor;
   font-kerning: none;
   font-variant-ligatures: none;
   font-feature-settings: "liga" 0, "kern" 0;
