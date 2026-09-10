@@ -47,6 +47,7 @@
   letter-spacing: -0.02em; /* letters lean into each other slightly, feels more continuous */
   transform: skewX(-2deg);
   transform-origin: left;
+  font-weight: 400; /* explicitly matches your DisplayItalic.otf's declared weight */
 }
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
