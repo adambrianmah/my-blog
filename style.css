@@ -1,13 +1,61 @@
+@font-face {
+  font-family: 'ET Bembo';
+  src: url('fonts/ETBembo-RomanLF.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
 
-body {
+@font-face {
+  font-family: 'ET Bembo';
+  src: url('fonts/ETBembo-DisplayItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ET Bembo';
+  src: url('fonts/ETBembo-SemiBoldOSF.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+.bembo-body p {
+  font-family: 'ET Bembo', Georgia, serif;
+  font-weight: 900; 
+  font-size: 1.15rem;       /* matches the fairly generous type size in the scan */
+  line-height: 1.4;        /* the scan has tight-but-readable leading, not airy */
+  text-indent: 0;         /* first-line paragraph indent, no blank line between */
+  max-width: 60ch;          /* the scan's column is fairly narrow relative to type size */
+  color: #1c1c1c;           /* the scan is black ink, not pure #000 — slightly softer */
+  word-spacing: -0.00em; /* negative value tightens space between words */
+  -webkit-text-stroke: 0.4px currentColor;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "kern" 0;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-font-smoothing: none;
+  letter-spacing: 0.015em; /* small bump from 0.01em, helps clumped-together letters breathe */
+  margin: 0 0 1em; /* gives each paragraph room to exist as a distinct block */
+}
+.bembo-body .epigraph {
+  font-family: 'ET Bembo', Georgia, serif;
+  font-style: italic;
+  line-height: 1.25;        /* tighter than body — poetry often sits closer together */
+  letter-spacing: 0.005em;  /* slightly tighter than body's 0.015em */
+  text-align: left;
+  margin: 0 0 2em;          /* more space after it, separating it from the prose that follows */
+  letter-spacing: -0.02em; /* letters lean into each other slightly, feels more continuous */
+  transform: skewX(-2deg);
+  transform-origin: left;
+}
+header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
     max-width: 700px;
     margin: auto;
     padding: 20px;
     line-height: 1.6;
-
-    background-color: #fada5e;
 }
+
 header {
     margin-bottom: 20px;
 }
@@ -36,4 +84,37 @@ img {
     height: auto;
     border-radius: 0px;
     margin-top: 10px;
+}
+body {
+  background-color: #fada5e;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.post-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0 0 1em;
+  max-width: 75ch;       /* wider reading column — 60ch was on the narrow side */
+  line-height: 1.6;      /* comfortable default, not tight like Bembo's setup */
+  letter-spacing: normal; /* explicitly cancel any letter-spacing bleeding in */
+  word-spacing: normal;
+  text-align: left;
+  hyphens: none;
+  margin: 0 0 1em;
+  font-kerning: auto;
+  font-variant-ligatures: normal;
+  font-feature-settings: normal;
+  text-align: justify;
+  hyphens: auto;
 }
