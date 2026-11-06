@@ -20,7 +20,7 @@
 }
 .bembo-body p {
   font-family: 'ET Bembo', Georgia, serif;
-  font-weight: 600; 
+  font-weight: 400; 
   font-size: 1.0rem;       /* matches the fairly generous type size in the scan */
   line-height: 1.1;        /* the scan has tight-but-readable leading, not airy */
   text-indent: 0;         /* first-line paragraph indent, no blank line between */
@@ -100,7 +100,7 @@ main {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
-  color: #333;
+  color: #222;
   margin-bottom: 20px;
 }
 p {
